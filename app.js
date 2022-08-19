@@ -11,6 +11,11 @@ app.get('/', (req, res) => {
     // Ending the response
     res.end()
 })
+
+app.get('/code', (req, res) => {
+    res.send('Hello this is the code end point')
+    res.end()
+})
  
 // Establishing the port
 const PORT = process.env.PORT || 5005;
